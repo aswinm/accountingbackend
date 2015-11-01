@@ -3,4 +3,5 @@ argparse==1.2.1
 django-cors-headers==1.1.0
 djangorestframework==3.2.4
 waitress==0.8.10
+whitenoise==2.0.4
 wsgiref==0.1.2

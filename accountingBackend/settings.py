@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '&0-44_w7m04#+vs9sj*)g7tucy3(5(k^@u826fmsnu)2$nt#81'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False 
 
 
 
@@ -108,8 +108,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-#import dj_database_url
-#DATABASES['default'] =  dj_database_url.config()
+STATIC_ROOT = 'stat'
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
